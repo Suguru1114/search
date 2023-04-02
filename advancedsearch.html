@@ -6,13 +6,7 @@
         <!DOCTYPE html>
 
         <style>
-            form{
-                /* text-align: center; */ 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
+            
             input[type=text] {   
                 margin: 8px 0;
                 width: 45%;
@@ -41,12 +35,22 @@
         </style>
     </head>
     <body>
-        <form action="http://images.google.com/images" method="get">
+        <!-- <form action="http://images.google.com/images" method="get">
             <input type="text" name="q">
+            <input type="submit" value="Advanced Search">
+        </form> -->
+
+        <form action="/search" id="adsch" method="get">
+            
             <input type="submit" value="Advanced Search">
         </form>
         
-            
+        <ul> Find pages with… </ul>
+        <ul>“all these words:”</ul>
+        <ul>“this exact word or phrase:”</ul>
+        <ul>“any of these words:”</ul>
+        <ul>“none of these words:”</ul>
+
         <button onclick="advancedsearch">
             <a href="file:///Users/suguru/Projects/CS50/search/index.html">Go to GoogleSearch</a>
         </button>
