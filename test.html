@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Round Corner Button Example</title>
-	<style>
-		.round-corner-btn {
-			display: inline-block;
-			padding: 10px 20px;
-			border-radius: 5px;
-			background-color: #007bff;
-			color: #fff;
-			text-align: center;
-			text-decoration: none;
-			cursor: pointer;
-			border: none;
-			transition: background-color 0.3s ease;
-		}
-
-		.round-corner-btn:hover {
-			background-color: #0062cc;
-		}
-	</style>
-</head>
-<body>
-	<button type="button" class="round-corner-btn" onclick="window.location.href='https://www.example.com'">Go to Example.com</button>
-</body>
-</html>
+<form>
+	<label for="all-words">Find pages with... "all these words:"</label><br>
+	<input type="text" id="all-words" name="all-words"><br>
+  
+	<label for="exact-phrase">Find pages with... "this exact word or phrase:"</label><br>
+	<input type="text" id="exact-phrase" name="exact-phrase"><br>
+  
+	<label for="any-words">Find pages with... "any of these words:"</label><br>
+	<input type="text" id="any-words" name="any-words"><br>
+  
+	<label for="none-words">Find pages with... "none of these words:"</label><br>
+	<input type="text" id="none-words" name="none-words"><br>
+  
+	<input type="submit" value="Search">
+  </form>
+  
