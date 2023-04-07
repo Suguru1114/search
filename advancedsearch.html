@@ -28,8 +28,11 @@
                 border-radius: 20px;
                 position: fixed; 
                 top: 10px;
-                right: 10px;
-                
+                right: 10px;   
+            }
+
+            .search{
+                color: aqua;
             }
 
         </style>
@@ -40,23 +43,27 @@
             <input type="submit" value="Advanced Search">
         </form> -->
 
-        <form action="/search" id="adsch" method="get">
-            
-            <input type="submit" value="Advanced Search">
+        <form action="https://www.google.com.au/advanced_search" method="get">
+        
+            <label for="all-words">Find pages with... "all these words:"</label><br>
+            <input type="text" id="all-words" name="all-words"><br>
+        
+            <label for="exact-phrase">Find pages with... "this exact word or phrase:"</label><br>
+            <input type="text" id="exact-phrase" name="exact-phrase"><br>
+        
+            <label for="any-words">Find pages with... "any of these words:"</label><br>
+            <input type="text" id="any-words" name="any-words"><br>
+        
+            <label for="none-words">Find pages with... "none of these words:"</label><br>
+            <input type="text" id="none-words" name="none-words"><br>
+        
+            <input type="submit" id="search" value="Search">
+
         </form>
-        
-        <ul> Find pages with… </ul>
-            <label for=""> all these words</label>
-            <!-- <input class="atw" value="" id="t2dX1c" name="as_eq" type="text"> -->
 
-            <label for="all-words"> this exact word or phrase</label> 
-            <label for=""> any of these words</label>
-            <label for=""> none of these words</label>
-        
-
-        <button onclick="advancedsearch">
-            <a href="file:///Users/suguru/Projects/CS50/search/index.html">Go to GoogleSearch</a>
-        </button>
+        <!-- <button onclick="advancedsearch">
+            <a href="https://www.google.com.au/advanced_search">Go to GoogleSearch</a>
+        </button> -->
         
     </body>
 </html>
