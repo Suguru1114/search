@@ -1,16 +1,52 @@
-<form>
-	<label for="all-words">Find pages with... "all these words:"</label><br>
-	<input type="text" id="all-words" name="all-words"><br>
-  
-	<label for="exact-phrase">Find pages with... "this exact word or phrase:"</label><br>
-	<input type="text" id="exact-phrase" name="exact-phrase"><br>
-  
-	<label for="any-words">Find pages with... "any of these words:"</label><br>
-	<input type="text" id="any-words" name="any-words"><br>
-  
-	<label for="none-words">Find pages with... "none of these words:"</label><br>
-	<input type="text" id="none-words" name="none-words"><br>
-  
-	<input type="submit" value="Search">
-  </form>
-  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Bar Example</title>
+  <style>
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .search-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-container input {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .search-container button {
+      width: 150px;
+      padding: 10px;
+    }
+
+    .button-container {
+      display: flex;
+    }
+
+    .button-container button {
+      flex: 1;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <form>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="submit" id="searchButton">Search</button>
+    </form>
+    <div class="button-container">
+      <button type="button" id="feelingLuckyButton">I'm Feeling Lucky</button>
+    </div>
+  </div>
+</body>
+</html>
