@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Search Bar Example</title>
+  <title>Search Page</title>
   <style>
-    .search-container {
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       height: 100vh;
     }
 
-    .search-container form {
+    .search-bar {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .search-container input {
+    input[type="text"] {
       width: 300px;
       padding: 10px;
       margin-bottom: 10px;
     }
 
-    .search-container button {
-      width: 150px;
-      padding: 10px;
-    }
-
-    .button-container {
+    .btn-container {
       display: flex;
     }
 
-    .button-container button {
-      flex: 1;
-      margin: 0 5px;
+    .btn-2,
+    .btn-3 {
+      padding: 10px;
+      margin-left: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="search-container">
-    <form>
-      <input type="text" id="searchInput" placeholder="Search..." />
-      <button type="submit" id="searchButton">Search</button>
+  <div class="search-bar">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="Search...">
+      <div class="btn-container">
+        <input type="submit" class="btn-2" value="Google Search">
+        <input type="submit" class="btn-3" value="I'm Feeling Lucky">
+      </div>
     </form>
-    <div class="button-container">
-      <button type="button" id="feelingLuckyButton">I'm Feeling Lucky</button>
-    </div>
   </div>
 </body>
 </html>
