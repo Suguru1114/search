@@ -4,14 +4,14 @@
         <title>Image Search</title>
 
         <style>
-            .btn-container{
+            .container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
             }
 
-            .btn-container [type=text] {   
+            .container [type=text] {   
                 margin: 8px 0;
                 width: 550px;
                 height: 30px;
@@ -37,22 +37,25 @@
                 
             }
 
-            .btn-3{
+            .btn-container{
                 display: flex;
                 justify-content: center;
-                position: relative;
-                border-radius: 20px;
-
             }
+            .btn-3{
+                border-radius: 20px;
+                width: 150px;
+            }
+
+            
 
         </style>
     </head>
     <body>
-        <div class="btn-container">
+        <div class="container">
             <form action="http://images.google.com/images" method="get">
                 <input type="text" name="q" placeholder="Search...">
-                <div class="btn-3">
-                    <input type="submit" value="Image Search">
+                <div class="btn-container">
+                    <input type="submit" class="btn-3" value="Image Search">
                 </div>
             </form>
         </div>  
